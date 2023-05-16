@@ -31,7 +31,7 @@ from source_data
 
 -- where id is not null
 with t1 as (
-select * from bi_dashboard.email_lemonaid_daily_report_raw where date = '20230401')
+select * from bi_dashboard.email_lemonaid_daily_report_raw where date = '20230402')
 
 
 select * from t1
