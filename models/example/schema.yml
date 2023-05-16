@@ -1,0 +1,6 @@
+
+version: 2
+
+models:
+  - name: email_lemonaid_daily_report
+    description: "A starter dbt model"

@@ -1,0 +1,643 @@
+
+
+============================== 2023-05-16 00:04:01.623705 | bcaaa1c0-9a01-490f-bd1c-54b828275027 ==============================
+[0m00:04:01.623705 [info ] [MainThread]: Running with dbt=1.4.5
+[0m00:04:01.624416 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/araichurkar/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m00:04:01.624512 [debug] [MainThread]: Tracking: tracking
+[0m00:04:01.640938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108bc1bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b67790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b677f0>]}
+[0m00:04:10.040845 [debug] [MainThread]: Starter project path: /opt/homebrew/Cellar/dbt-redshift/1.4.0/libexec/lib/python3.9/site-packages/dbt/include/starter_project
+[0m00:05:16.154031 [info ] [MainThread]: Profile dbt_fivetran written to /Users/araichurkar/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m00:05:16.155489 [info ] [MainThread]: 
+Your new dbt project "dbt_fivetran" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:05:16.156163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108bc1190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108bc1970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108bc1640>]}
+[0m00:05:16.156632 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-05-16 00:29:23.305187 | 490658f0-d49b-4be3-84e0-91a18a832281 ==============================
+[0m00:29:23.305187 [info ] [MainThread]: Running with dbt=1.4.5
+[0m00:29:23.306025 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/araichurkar/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m00:29:23.306147 [debug] [MainThread]: Tracking: tracking
+[0m00:29:23.324578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068154f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067bb790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067bb7f0>]}
+[0m00:29:23.499172 [debug] [MainThread]: Executing "git --help"
+[0m00:29:23.517251 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:29:23.519163 [debug] [MainThread]: STDERR: "b''"
+[0m00:29:23.520608 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m00:29:23.520915 [debug] [MainThread]: Using redshift connection "debug"
+[0m00:29:23.521066 [debug] [MainThread]: On debug: select 1 as id
+[0m00:29:23.521196 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:29:23.521397 [debug] [MainThread]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m00:29:24.211610 [debug] [MainThread]: SQL status: SELECT in 1 seconds
+[0m00:29:24.216188 [debug] [MainThread]: On debug: Close
+[0m00:29:24.217296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f306a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f30970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f30400>]}
+[0m00:29:24.217946 [debug] [MainThread]: Flushing usage events
+[0m00:29:24.782317 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-05-16 00:30:29.340534 | 0c30a8f0-e59d-4a74-8b21-93db4047e9fc ==============================
+[0m00:30:29.340534 [info ] [MainThread]: Running with dbt=1.4.5
+[0m00:30:29.341506 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/araichurkar/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m00:30:29.341635 [debug] [MainThread]: Tracking: tracking
+[0m00:30:29.358011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107177100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107177e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107177a90>]}
+[0m00:30:29.367773 [debug] [MainThread]: checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+[0m00:30:29.368491 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m00:30:29.368700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0c30a8f0-e59d-4a74-8b21-93db4047e9fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10718f370>]}
+[0m00:30:29.695227 [debug] [MainThread]: 1699: static parser successfully parsed example/email_lemonaid_daily_report.sql
+[0m00:30:29.727166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0c30a8f0-e59d-4a74-8b21-93db4047e9fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072a6880>]}
+[0m00:30:29.730525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0c30a8f0-e59d-4a74-8b21-93db4047e9fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107194e20>]}
+[0m00:30:29.730723 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 329 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m00:30:29.730880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0c30a8f0-e59d-4a74-8b21-93db4047e9fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072481f0>]}
+[0m00:30:29.731519 [info ] [MainThread]: 
+[0m00:30:29.732411 [debug] [MainThread]: Acquiring new redshift connection 'master'
+[0m00:30:29.732975 [debug] [ThreadPool]: Acquiring new redshift connection 'list_hl'
+[0m00:30:29.739223 [debug] [ThreadPool]: Using redshift connection "list_hl"
+[0m00:30:29.739430 [debug] [ThreadPool]: On list_hl: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "dbt_fivetran", "target_name": "dev", "connection_name": "list_hl"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m00:30:29.739553 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:30:29.739671 [debug] [ThreadPool]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m00:30:30.072775 [debug] [ThreadPool]: SQL status: SELECT in 0 seconds
+[0m00:30:30.077760 [debug] [ThreadPool]: On list_hl: Close
+[0m00:30:30.079010 [debug] [ThreadPool]: Acquiring new redshift connection 'list_hl_bi_dashboard'
+[0m00:30:30.082943 [debug] [ThreadPool]: Using redshift connection "list_hl_bi_dashboard"
+[0m00:30:30.083089 [debug] [ThreadPool]: On list_hl_bi_dashboard: BEGIN
+[0m00:30:30.083198 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m00:30:30.083303 [debug] [ThreadPool]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m00:30:30.356923 [debug] [ThreadPool]: SQL status: BEGIN in 0 seconds
+[0m00:30:30.357557 [debug] [ThreadPool]: Using redshift connection "list_hl_bi_dashboard"
+[0m00:30:30.357794 [debug] [ThreadPool]: On list_hl_bi_dashboard: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "dbt_fivetran", "target_name": "dev", "connection_name": "list_hl_bi_dashboard"} */
+select
+      'hl' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'bi_dashboard'
+    union all
+    select
+      'hl' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'bi_dashboard'
+  
+[0m00:30:30.436933 [debug] [ThreadPool]: SQL status: SELECT in 0 seconds
+[0m00:30:30.439356 [debug] [ThreadPool]: On list_hl_bi_dashboard: ROLLBACK
+[0m00:30:30.495478 [debug] [ThreadPool]: On list_hl_bi_dashboard: Close
+[0m00:30:30.499611 [debug] [MainThread]: Using redshift connection "master"
+[0m00:30:30.499791 [debug] [MainThread]: On master: BEGIN
+[0m00:30:30.499903 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:30:30.500014 [debug] [MainThread]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m00:30:30.847580 [debug] [MainThread]: SQL status: BEGIN in 0 seconds
+[0m00:30:30.848197 [debug] [MainThread]: Using redshift connection "master"
+[0m00:30:30.848494 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "dbt_fivetran", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m00:30:30.997832 [debug] [MainThread]: SQL status: SELECT in 0 seconds
+[0m00:30:31.001743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0c30a8f0-e59d-4a74-8b21-93db4047e9fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10734a8b0>]}
+[0m00:30:31.002093 [debug] [MainThread]: On master: ROLLBACK
+[0m00:30:31.030375 [debug] [MainThread]: Using redshift connection "master"
+[0m00:30:31.031045 [debug] [MainThread]: On master: BEGIN
+[0m00:30:31.088003 [debug] [MainThread]: SQL status: BEGIN in 0 seconds
+[0m00:30:31.088833 [debug] [MainThread]: On master: COMMIT
+[0m00:30:31.089335 [debug] [MainThread]: Using redshift connection "master"
+[0m00:30:31.089655 [debug] [MainThread]: On master: COMMIT
+[0m00:30:31.119731 [debug] [MainThread]: SQL status: COMMIT in 0 seconds
+[0m00:30:31.121033 [debug] [MainThread]: On master: Close
+[0m00:30:31.123069 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m00:30:31.123926 [info ] [MainThread]: 
+[0m00:30:31.130250 [debug] [Thread-1  ]: Began running node model.dbt_fivetran.email_lemonaid_daily_report
+[0m00:30:31.130913 [info ] [Thread-1  ]: 1 of 1 START sql incremental model bi_dashboard.email_lemonaid_daily_report .... [RUN]
+[0m00:30:31.131819 [debug] [Thread-1  ]: Acquiring new redshift connection 'model.dbt_fivetran.email_lemonaid_daily_report'
+[0m00:30:31.132130 [debug] [Thread-1  ]: Began compiling node model.dbt_fivetran.email_lemonaid_daily_report
+[0m00:30:31.137187 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_fivetran.email_lemonaid_daily_report"
+[0m00:30:31.138756 [debug] [Thread-1  ]: Timing info for model.dbt_fivetran.email_lemonaid_daily_report (compile): 2023-05-16 00:30:31.132332 => 2023-05-16 00:30:31.138619
+[0m00:30:31.139079 [debug] [Thread-1  ]: Began executing node model.dbt_fivetran.email_lemonaid_daily_report
+[0m00:30:31.187413 [debug] [Thread-1  ]: Using redshift connection "model.dbt_fivetran.email_lemonaid_daily_report"
+[0m00:30:31.187660 [debug] [Thread-1  ]: On model.dbt_fivetran.email_lemonaid_daily_report: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "dbt_fivetran", "target_name": "dev", "node_id": "model.dbt_fivetran.email_lemonaid_daily_report"} */
+
+    
+  
+    
+
+  create temporary table
+    "email_lemonaid_daily_report__dbt_tmp203031164973"
+    
+    
+    
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+/*
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+*/
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+with t1 as (
+select * from bi_dashboard.email_lemonaid_daily_report_raw where date = '20230102')
+
+
+select * from t1
+  );
+  
+  
+[0m00:30:31.187776 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m00:30:31.187882 [debug] [Thread-1  ]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m00:30:32.270673 [debug] [Thread-1  ]: SQL status: SELECT in 1 seconds
+[0m00:30:32.280982 [debug] [Thread-1  ]: Using redshift connection "model.dbt_fivetran.email_lemonaid_daily_report"
+[0m00:30:32.281259 [debug] [Thread-1  ]: On model.dbt_fivetran.email_lemonaid_daily_report: BEGIN
+[0m00:30:32.310804 [debug] [Thread-1  ]: SQL status: BEGIN in 0 seconds
+[0m00:30:32.311028 [debug] [Thread-1  ]: Using redshift connection "model.dbt_fivetran.email_lemonaid_daily_report"
+[0m00:30:32.311206 [debug] [Thread-1  ]: On model.dbt_fivetran.email_lemonaid_daily_report: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "dbt_fivetran", "target_name": "dev", "node_id": "model.dbt_fivetran.email_lemonaid_daily_report"} */
+
+      with bound_views as (
+        select
+          ordinal_position,
+          table_schema,
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+        from information_schema."columns"
+        where table_name = 'email_lemonaid_daily_report__dbt_tmp203031164973'
+    ),
+
+    unbound_views as (
+      select
+        ordinal_position,
+        view_schema,
+        col_name,
+        case
+          when col_type ilike 'character varying%' then
+            'character varying'
+          when col_type ilike 'numeric%' then 'numeric'
+          else col_type
+        end as col_type,
+        case
+          when col_type like 'character%'
+          then nullif(REGEXP_SUBSTR(col_type, '[0-9]+'), '')::int
+          else null
+        end as character_maximum_length,
+        case
+          when col_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(col_type, '[0-9,]+'), ',', 1),
+            '')::int
+          else null
+        end as numeric_precision,
+        case
+          when col_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(col_type, '[0-9,]+'), ',', 2),
+            '')::int
+          else null
+        end as numeric_scale
+
+      from pg_get_late_binding_view_cols()
+      cols(view_schema name, view_name name, col_name name,
+           col_type varchar, ordinal_position int)
+      where view_name = 'email_lemonaid_daily_report__dbt_tmp203031164973'
+    ),
+
+    external_views as (
+      select
+        columnnum,
+        schemaname,
+        columnname,
+        case
+          when external_type ilike 'character varying%' or external_type ilike 'varchar%'
+          then 'character varying'
+          when external_type ilike 'numeric%' then 'numeric'
+          else external_type
+        end as external_type,
+        case
+          when external_type like 'character%' or external_type like 'varchar%'
+          then nullif(
+            REGEXP_SUBSTR(external_type, '[0-9]+'),
+            '')::int
+          else null
+        end as character_maximum_length,
+        case
+          when external_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(external_type, '[0-9,]+'), ',', 1),
+            '')::int
+          else null
+        end as numeric_precision,
+        case
+          when external_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(external_type, '[0-9,]+'), ',', 2),
+            '')::int
+          else null
+        end as numeric_scale
+      from
+        pg_catalog.svv_external_columns
+      where
+        schemaname = 'None'
+        and tablename = 'email_lemonaid_daily_report__dbt_tmp203031164973'
+
+    ),
+
+    unioned as (
+      select * from bound_views
+      union all
+      select * from unbound_views
+      union all
+      select * from external_views
+    )
+
+    select
+      column_name,
+      data_type,
+      character_maximum_length,
+      numeric_precision,
+      numeric_scale
+
+    from unioned
+    
+    order by ordinal_position
+  
+[0m00:30:32.629254 [debug] [Thread-1  ]: SQL status: SELECT in 0 seconds
+[0m00:30:32.640452 [debug] [Thread-1  ]: Using redshift connection "model.dbt_fivetran.email_lemonaid_daily_report"
+[0m00:30:32.640737 [debug] [Thread-1  ]: On model.dbt_fivetran.email_lemonaid_daily_report: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "dbt_fivetran", "target_name": "dev", "node_id": "model.dbt_fivetran.email_lemonaid_daily_report"} */
+
+      with bound_views as (
+        select
+          ordinal_position,
+          table_schema,
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+        from information_schema."columns"
+        where table_name = 'email_lemonaid_daily_report'
+    ),
+
+    unbound_views as (
+      select
+        ordinal_position,
+        view_schema,
+        col_name,
+        case
+          when col_type ilike 'character varying%' then
+            'character varying'
+          when col_type ilike 'numeric%' then 'numeric'
+          else col_type
+        end as col_type,
+        case
+          when col_type like 'character%'
+          then nullif(REGEXP_SUBSTR(col_type, '[0-9]+'), '')::int
+          else null
+        end as character_maximum_length,
+        case
+          when col_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(col_type, '[0-9,]+'), ',', 1),
+            '')::int
+          else null
+        end as numeric_precision,
+        case
+          when col_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(col_type, '[0-9,]+'), ',', 2),
+            '')::int
+          else null
+        end as numeric_scale
+
+      from pg_get_late_binding_view_cols()
+      cols(view_schema name, view_name name, col_name name,
+           col_type varchar, ordinal_position int)
+      where view_name = 'email_lemonaid_daily_report'
+    ),
+
+    external_views as (
+      select
+        columnnum,
+        schemaname,
+        columnname,
+        case
+          when external_type ilike 'character varying%' or external_type ilike 'varchar%'
+          then 'character varying'
+          when external_type ilike 'numeric%' then 'numeric'
+          else external_type
+        end as external_type,
+        case
+          when external_type like 'character%' or external_type like 'varchar%'
+          then nullif(
+            REGEXP_SUBSTR(external_type, '[0-9]+'),
+            '')::int
+          else null
+        end as character_maximum_length,
+        case
+          when external_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(external_type, '[0-9,]+'), ',', 1),
+            '')::int
+          else null
+        end as numeric_precision,
+        case
+          when external_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(external_type, '[0-9,]+'), ',', 2),
+            '')::int
+          else null
+        end as numeric_scale
+      from
+        pg_catalog.svv_external_columns
+      where
+        schemaname = 'bi_dashboard'
+        and tablename = 'email_lemonaid_daily_report'
+
+    ),
+
+    unioned as (
+      select * from bound_views
+      union all
+      select * from unbound_views
+      union all
+      select * from external_views
+    )
+
+    select
+      column_name,
+      data_type,
+      character_maximum_length,
+      numeric_precision,
+      numeric_scale
+
+    from unioned
+    
+    where table_schema = 'bi_dashboard'
+    
+    order by ordinal_position
+  
+[0m00:30:32.881603 [debug] [Thread-1  ]: SQL status: SELECT in 0 seconds
+[0m00:30:32.896698 [debug] [Thread-1  ]: Using redshift connection "model.dbt_fivetran.email_lemonaid_daily_report"
+[0m00:30:32.896960 [debug] [Thread-1  ]: On model.dbt_fivetran.email_lemonaid_daily_report: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "dbt_fivetran", "target_name": "dev", "node_id": "model.dbt_fivetran.email_lemonaid_daily_report"} */
+
+      with bound_views as (
+        select
+          ordinal_position,
+          table_schema,
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+        from information_schema."columns"
+        where table_name = 'email_lemonaid_daily_report'
+    ),
+
+    unbound_views as (
+      select
+        ordinal_position,
+        view_schema,
+        col_name,
+        case
+          when col_type ilike 'character varying%' then
+            'character varying'
+          when col_type ilike 'numeric%' then 'numeric'
+          else col_type
+        end as col_type,
+        case
+          when col_type like 'character%'
+          then nullif(REGEXP_SUBSTR(col_type, '[0-9]+'), '')::int
+          else null
+        end as character_maximum_length,
+        case
+          when col_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(col_type, '[0-9,]+'), ',', 1),
+            '')::int
+          else null
+        end as numeric_precision,
+        case
+          when col_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(col_type, '[0-9,]+'), ',', 2),
+            '')::int
+          else null
+        end as numeric_scale
+
+      from pg_get_late_binding_view_cols()
+      cols(view_schema name, view_name name, col_name name,
+           col_type varchar, ordinal_position int)
+      where view_name = 'email_lemonaid_daily_report'
+    ),
+
+    external_views as (
+      select
+        columnnum,
+        schemaname,
+        columnname,
+        case
+          when external_type ilike 'character varying%' or external_type ilike 'varchar%'
+          then 'character varying'
+          when external_type ilike 'numeric%' then 'numeric'
+          else external_type
+        end as external_type,
+        case
+          when external_type like 'character%' or external_type like 'varchar%'
+          then nullif(
+            REGEXP_SUBSTR(external_type, '[0-9]+'),
+            '')::int
+          else null
+        end as character_maximum_length,
+        case
+          when external_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(external_type, '[0-9,]+'), ',', 1),
+            '')::int
+          else null
+        end as numeric_precision,
+        case
+          when external_type like 'numeric%'
+          then nullif(
+            SPLIT_PART(REGEXP_SUBSTR(external_type, '[0-9,]+'), ',', 2),
+            '')::int
+          else null
+        end as numeric_scale
+      from
+        pg_catalog.svv_external_columns
+      where
+        schemaname = 'bi_dashboard'
+        and tablename = 'email_lemonaid_daily_report'
+
+    ),
+
+    unioned as (
+      select * from bound_views
+      union all
+      select * from unbound_views
+      union all
+      select * from external_views
+    )
+
+    select
+      column_name,
+      data_type,
+      character_maximum_length,
+      numeric_precision,
+      numeric_scale
+
+    from unioned
+    
+    where table_schema = 'bi_dashboard'
+    
+    order by ordinal_position
+  
+[0m00:30:33.130930 [debug] [Thread-1  ]: SQL status: SELECT in 0 seconds
+[0m00:30:33.155727 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_fivetran.email_lemonaid_daily_report"
+[0m00:30:33.157468 [debug] [Thread-1  ]: Using redshift connection "model.dbt_fivetran.email_lemonaid_daily_report"
+[0m00:30:33.157663 [debug] [Thread-1  ]: On model.dbt_fivetran.email_lemonaid_daily_report: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "dbt_fivetran", "target_name": "dev", "node_id": "model.dbt_fivetran.email_lemonaid_daily_report"} */
+
+      
+        
+            delete from "hl"."bi_dashboard"."email_lemonaid_daily_report"
+            where (
+                keyword) in (
+                select (keyword)
+                from "email_lemonaid_daily_report__dbt_tmp203031164973"
+            );
+
+        
+    
+
+    insert into "hl"."bi_dashboard"."email_lemonaid_daily_report" ("date", "campaign", "ad_content", "keyword", "sessions", "transactions", "bounces", "bounce_rate")
+    (
+        select "date", "campaign", "ad_content", "keyword", "sessions", "transactions", "bounces", "bounce_rate"
+        from "email_lemonaid_daily_report__dbt_tmp203031164973"
+    )
+  
+[0m00:30:34.253384 [debug] [Thread-1  ]: SQL status: INSERT 0 504 in 1 seconds
+[0m00:30:34.276770 [debug] [Thread-1  ]: On model.dbt_fivetran.email_lemonaid_daily_report: COMMIT
+[0m00:30:34.277173 [debug] [Thread-1  ]: Using redshift connection "model.dbt_fivetran.email_lemonaid_daily_report"
+[0m00:30:34.277352 [debug] [Thread-1  ]: On model.dbt_fivetran.email_lemonaid_daily_report: COMMIT
+[0m00:30:35.119212 [debug] [Thread-1  ]: SQL status: COMMIT in 1 seconds
+[0m00:30:35.122979 [debug] [Thread-1  ]: Timing info for model.dbt_fivetran.email_lemonaid_daily_report (execute): 2023-05-16 00:30:31.139274 => 2023-05-16 00:30:35.122783
+[0m00:30:35.123711 [debug] [Thread-1  ]: On model.dbt_fivetran.email_lemonaid_daily_report: Close
+[0m00:30:35.125277 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0c30a8f0-e59d-4a74-8b21-93db4047e9fc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073a2fd0>]}
+[0m00:30:35.125999 [info ] [Thread-1  ]: 1 of 1 OK created sql incremental model bi_dashboard.email_lemonaid_daily_report  [[32mINSERT 0 504[0m in 3.99s]
+[0m00:30:35.128250 [debug] [Thread-1  ]: Finished running node model.dbt_fivetran.email_lemonaid_daily_report
+[0m00:30:35.129900 [debug] [MainThread]: Acquiring new redshift connection 'master'
+[0m00:30:35.130234 [debug] [MainThread]: Using redshift connection "master"
+[0m00:30:35.130459 [debug] [MainThread]: On master: BEGIN
+[0m00:30:35.130680 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m00:30:35.130921 [debug] [MainThread]: Redshift adapter: Connecting to Redshift using 'database' credentials
+[0m00:30:35.410647 [debug] [MainThread]: SQL status: BEGIN in 0 seconds
+[0m00:30:35.412088 [debug] [MainThread]: On master: COMMIT
+[0m00:30:35.412440 [debug] [MainThread]: Using redshift connection "master"
+[0m00:30:35.412777 [debug] [MainThread]: On master: COMMIT
+[0m00:30:35.442112 [debug] [MainThread]: SQL status: COMMIT in 0 seconds
+[0m00:30:35.443319 [debug] [MainThread]: On master: Close
+[0m00:30:35.446424 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:30:35.447079 [debug] [MainThread]: Connection 'model.dbt_fivetran.email_lemonaid_daily_report' was properly closed.
+[0m00:30:35.447729 [info ] [MainThread]: 
+[0m00:30:35.448364 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 5.72 seconds (5.72s).
+[0m00:30:35.449213 [debug] [MainThread]: Command end result
+[0m00:30:35.459964 [info ] [MainThread]: 
+[0m00:30:35.460499 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:30:35.460767 [info ] [MainThread]: 
+[0m00:30:35.461041 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m00:30:35.461479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107177e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107407af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107407940>]}
+[0m00:30:35.461813 [debug] [MainThread]: Flushing usage events
