@@ -1,11 +1,5 @@
 
-/*
-    Welcome to your first dbt model!
-    Did you know that you can also configure models directly within SQL files?
-    This will override configurations stated in dbt_project.yml
 
-    Try changing "table" to "view" below
-*/
 
 {{ 
 config(
@@ -13,23 +7,7 @@ config(
     unique_key='keyword',
 )
 }}
-/*
-with source_data as (
 
-    select 1 as id
-    union all
-    select null as id
-
-)
-
-select *
-from source_data
-*/
-/*
-    Uncomment the line below to remove records with null `id` values
-*/
-
--- where id is not null
 with t1 as (
 SELECT date
        , campaign
@@ -54,14 +32,4 @@ SELECT date
         )
 
 
-select
-        date
-        , campaign
-       , ad_content
-       , keyword
-       , sessions
-       , transactions
-       , bounces
-       , bounce_rate
-       , lemonaid_sk
-        from t1
+select * from t1
