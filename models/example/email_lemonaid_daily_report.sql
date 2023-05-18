@@ -9,7 +9,25 @@ config(
 }}
 
 with t1 as (
-select * from bi_dashboard.email_lemonaid_daily_report_raw where date = '20230402')
+SELECT date
+       , campaign
+       , ad_content
+       , keyword
+       , sessions
+       , transactions
+       , bounces
+       , bounce_rate
+        from hl.fivetran.email_lemonaid_daily_report_raw where to_date(cast(_modified as TEXT),'YYYY-MM-DD') >= '2023-01-01'
+        and _file in (select _file from hl.fivetran.email_lemonaid_daily_report_raw where to_date(cast(_modified as TEXT),'YYYY-MM-DD') >= '2023-01-01')
+        group by
+        date
+       , campaign
+       , ad_content
+       , keyword
+       , sessions
+       , transactions
+       , bounces
+       , bounce_rate)
 
 
 select * from t1
