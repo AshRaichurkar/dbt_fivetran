@@ -64,4 +64,4 @@ select
        , bounces
        , bounce_rate
        , lemonaid_sk
-        from t1;
+        from t1
