@@ -2,7 +2,7 @@
 version: 2
 
 models:
-  - name: email_lemonaid_daily_report
+  - name: email_lemonaid_report
     description: "A starter dbt model"
     database: hl
     schema: ashu_test
