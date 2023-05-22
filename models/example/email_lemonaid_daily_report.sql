@@ -28,7 +28,8 @@ SELECT date
        , sessions
        , transactions
        , bounces
-       , bounce_rate)
+       , bounce_rate
+       , fnv_hash(date, fnv_hash(campaign,  fnv_hash(keyword))))
 
 
 select * from t1

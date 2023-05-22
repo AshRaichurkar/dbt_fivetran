@@ -3,3 +3,6 @@ version: 2
 models:
   - name: email_lemonaid_daily_report
     description: "A starter dbt model"
+  
+  - name: email_uqora_daily_report_raw
+    description: "A starter dbt model"
