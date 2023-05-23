@@ -19,8 +19,8 @@ SELECT date
        , bounce_rate
 	   , fnv_hash(date, fnv_hash(campaign,  fnv_hash(keyword, fnv_hash(ad_content)))) as uqora_sk
  FROM hl.fivetran.email_uqora_daily_report_raw
- where to_date(cast(_modified as TEXT),'YYYY-MM-DD') = '2023-05-01'
- and _file in (select distinct _file from hl.fivetran.email_uqora_daily_report_raw where to_date(cast(_modified as TEXT),'YYYY-MM-DD') = '2023-05-01')
+ where to_date(cast(_modified as TEXT),'YYYY-MM-DD') = current_date
+ and _file in (select distinct _file from hl.fivetran.email_uqora_daily_report_raw where to_date(cast(_modified as TEXT),'YYYY-MM-DD') = current_date)
  and bounce_rate like '%\\%'
  group by date
        , campaign
